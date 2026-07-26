@@ -77,6 +77,10 @@ tools:
   bocha:
     api_key: "sk-**********************"
     endpoint: "https://api.bochaai.com/v1/web-search"
+  # You.com Search & Research API 配置（获取 API 密钥: https://ydc-index.io/docs）
+  youcom:
+    api_key: ""
+    endpoint: "https://ydc-index.io/v1/search"
 
 # RAG (检索增强生成) 配置
 rag:
