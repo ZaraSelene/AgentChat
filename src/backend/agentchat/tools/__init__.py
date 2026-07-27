@@ -9,6 +9,8 @@ from agentchat.tools.text2image.action import text_to_image
 from agentchat.tools.docx_to_pdf.action import convert_to_pdf
 from agentchat.tools.pdf_to_docx.action import convert_to_docx
 from agentchat.tools.image2text.action import image_to_text
+from agentchat.tools.youcom_search.action import youcom_search
+from agentchat.tools.youcom_research.action import youcom_research
 
 
 AgentTools = [
@@ -21,7 +23,9 @@ AgentTools = [
     text_to_image,
     image_to_text,
     convert_to_pdf,
-    convert_to_docx
+    convert_to_docx,
+    youcom_search,
+    youcom_research,
 ]
 
 
@@ -37,6 +41,8 @@ AgentToolsWithName = {
     "docx_to_pdf": convert_to_pdf,
     "pdf_to_docx": convert_to_docx,
     "bocha_search": bocha_search,
+    "youcom_search": youcom_search,
+    "youcom_research": youcom_research,
 }
 
 WorkSpacePlugins = AgentToolsWithName
